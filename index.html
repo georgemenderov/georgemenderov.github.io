@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Georgii Menderov — PLC Software Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- grid overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <!-- scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ═══════════════ HEADER / HERO ═══════════════ -->
+  <header class="hero">
+    <div class="hero-status-bar">
+      <span class="status-tag blink">● ONLINE</span>
+      <span class="status-tag">SYS: READY</span>
+      <span class="status-tag" id="clock-display">--:--:--</span>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="hero-label">ENGINEER PROFILE &mdash; v2026.1</div>
+      <h1 class="hero-name">GEORGII<br>MENDEROV</h1>
+      <div class="hero-title">Senior Automation Engineer &amp; PLC Software Architect</div>
+      <p class="hero-sub">26+ years · Berlin, DE · Permanent Residency</p>
+
+      <div class="hero-chips">
+        <span class="chip">Siemens TIA Portal</span>
+        <span class="chip">S7-1500 / S7-300</span>
+        <span class="chip">CI/CD for OT</span>
+        <span class="chip">PROFINET</span>
+        <span class="chip">Intralogistics</span>
+        <span class="chip">SINAMICS S120</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="mailto:george.menderov@gmail.com" class="btn btn-primary">
+          <span class="btn-icon">✉</span> GET IN TOUCH
+        </a>
+        <a href="https://www.linkedin.com/in/george-menderov" target="_blank" rel="noopener" class="btn btn-ghost">
+          <span class="btn-icon">↗</span> LINKEDIN
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="plc-block">
+        <div class="plc-label">CPU 1518F-4 PN/DP</div>
+        <div class="plc-leds">
+          <span class="led green"></span>
+          <span class="led green"></span>
+          <span class="led amber"></span>
+          <span class="led off"></span>
+        </div>
+        <div class="plc-io">
+          <div class="io-row" id="io-anim"></div>
+        </div>
+        <div class="plc-footer">RUN &nbsp;|&nbsp; PROFINET OK</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="#profile"     class="nav-link active" data-section="profile">PROFILE</a>
+      <a href="#competencies" class="nav-link" data-section="competencies">COMPETENCIES</a>
+      <a href="#experience"  class="nav-link" data-section="experience">EXPERIENCE</a>
+      <a href="#projects"    class="nav-link" data-section="projects">PROJECTS</a>
+      <a href="#education"   class="nav-link" data-section="education">EDUCATION</a>
+      <a href="#contact"     class="nav-link" data-section="contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════ PROFILE ═══════════════ -->
+    <section id="profile" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01</span> PROFILE</h2>
+        <div class="profile-grid">
+          <div class="profile-text">
+            <p class="lead">
+              Senior Automation Engineer &amp; PLC Software Architect with over
+              <strong>26 years of experience</strong> executing large-scale CAPEX investment
+              projects and defining global automation strategies.
+            </p>
+            <p>
+              Proven expert in bridging the gap between IT and OT: successfully transformed legacy
+              systems into modular <em>"LEGO-style"</em> standards and implemented CI/CD workflows
+              across multinational manufacturing facilities. Strong track record leading international
+              engineering teams, overseeing greenfield plant commissioning, and managing contractors
+              and technical vendors.
+            </p>
+          </div>
+          <div class="profile-stats">
+            <div class="stat-block">
+              <div class="stat-num">26+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-num">DE</div>
+              <div class="stat-label">Permanent Residency</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-num">EU</div>
+              <div class="stat-label">Project Coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ COMPETENCIES ═══════════════ -->
+    <section id="competencies" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">02</span> KEY COMPETENCIES</h2>
+        <div class="comp-grid">
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>Core Expertise</h3>
+            <ul>
+              <li>Global Standardization Strategies</li>
+              <li>Modular Software Architecture ("LEGO approach")</li>
+              <li>Brownfield &amp; Greenfield Plant Commissioning</li>
+            </ul>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>PLC &amp; Systems</h3>
+            <ul>
+              <li>Siemens TIA Portal (Expert Level)</li>
+              <li>Simatic Manager STEP 7 (Classic)</li>
+              <li>S7-1500/1200, S7-300/400</li>
+              <li>WinCC Pro/Adv/Unified, Safety Integrated</li>
+            </ul>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>Project Management</h3>
+            <ul>
+              <li>CAPEX Project Execution</li>
+              <li>Vendor &amp; Contractor Management</li>
+              <li>Budget Planning &amp; Timeline Control</li>
+            </ul>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>Industrial Comms</h3>
+            <ul>
+              <li>PROFINET, Ethernet/IP</li>
+              <li>PROFIBUS DP/MPI</li>
+              <li>MES/ERP Integration (Handshake)</li>
+            </ul>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>Methods &amp; Tools</h3>
+            <ul>
+              <li>CI/CD for Industrial Automation</li>
+              <li>Master Project Strategy</li>
+              <li>Jira, Confluence, E-PLAN P8, Git</li>
+            </ul>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-icon">◈</div>
+            <h3>Drive Technology</h3>
+            <ul>
+              <li>SINAMICS S120 (Motion Control)</li>
+              <li>SEW Eurodrive (VFDs)</li>
+              <li>KUKA &amp; Fanuc Robot Interfaces</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">03</span> PROFESSIONAL EXPERIENCE</h2>
+        <div class="timeline">
+
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">07.2024 — Present</div>
+            <div class="tl-body">
+              <div class="tl-company">Freelancer — Automation Engineering</div>
+              <div class="tl-location">Berlin, Germany</div>
+              <div class="tl-role">PLC/HMI Software Developer &amp; Commissioning Engineer</div>
+              <ul class="tl-list">
+                <li>Development and optimization of PLC/HMI software for intralogistics systems (Stacker Cranes / RBG, Conveyor Technology) using Siemens TIA Portal V18 and S7-1500.</li>
+                <li>Commissioning of plants for end customers across the EU.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">TIA Portal V18</span><span class="tag">S7-1517F</span><span class="tag">S7-1515F</span><span class="tag">Intralogistics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">03.2021 — 06.2024</div>
+            <div class="tl-body">
+              <div class="tl-company">TESLA Manufacturing</div>
+              <div class="tl-location">Grünheide, Germany</div>
+              <div class="tl-role">Senior Controls Engineer — Cell Manufacturing</div>
+              <ul class="tl-list">
+                <li><strong>Architecture &amp; Standardization:</strong> Developed modular software architecture for Unwinder/Rewinder machines; transformed legacy code into reusable standard modules ("Core Functions") adopted as global corporate standard.</li>
+                <li><strong>CI/CD "Master Project":</strong> Introduced centralized version management across Berlin and Austin (USA) facilities; implemented release management to prevent software drift.</li>
+                <li><strong>Sustaining Engineering:</strong> 24/7 equipment availability, 2nd/3rd level support, complex troubleshooting for anode/cathode machines.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">TIA Portal V16/V17</span><span class="tag">S7-1518F</span><span class="tag">CI/CD OT</span><span class="tag">MES/ERP</span><span class="tag">Electrode Production</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">05.2019 — 02.2021</div>
+            <div class="tl-body">
+              <div class="tl-company">Freelancer — Automation Engineering</div>
+              <div class="tl-location">Wuppertal, Germany</div>
+              <div class="tl-role">PLC Developer &amp; Commissioning Engineer</div>
+              <ul class="tl-list">
+                <li>Software development and commissioning for automated high-bay warehouses (30,000+ storage locations).</li>
+                <li>Clients: SEW-EURODRIVE, ERIKS Deutschland, Westvlees NV (Belgium), Leuze electronic.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">TIA Portal V15/V16</span><span class="tag">S7-1517F</span><span class="tag">High-Bay Warehouse</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">11.2014 — 04.2019</div>
+            <div class="tl-body">
+              <div class="tl-company">Elektrotechnik Wendland</div>
+              <div class="tl-location">Kierspe, Germany</div>
+              <div class="tl-role">Head of Automation &amp; Electrical Design</div>
+              <ul class="tl-list">
+                <li>Technical leadership of electrical and programming department.</li>
+                <li>Commissioning of robotic cells (KUKA, Fanuc) and assembly lines for automotive industry.</li>
+                <li>Retrofit projects for VW Saxony, Tesla Grohmann Automation, Volvocars (Sweden &amp; Belgium).</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">TIA V11–V15</span><span class="tag">KUKA</span><span class="tag">E-PLAN P8</span><span class="tag">Automotive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item tl-summary" data-reveal>
+            <div class="tl-date">1996 — 2013</div>
+            <div class="tl-body">
+              <div class="tl-company">Career in Russia — Summary</div>
+              <div class="tl-location">Russia</div>
+              <ul class="tl-list">
+                <li><strong>2011–2013</strong> — Maintenance Manager, Faurecia Automotive (Tier 1) — greenfield plant setup, TPM implementation.</li>
+                <li><strong>2008–2010</strong> — Maintenance Manager, Bekaert-Lipetsk — commissioning of technical infrastructure.</li>
+                <li><strong>2002–2008</strong> — Shift Leader / Chief Engineer Paint Shop, GM-AvtoVAZ — Dürr/Eisenmann equipment, paint robotics, PLC systems.</li>
+                <li><strong>1996–2002</strong> — Automation Engineer, AvtoVAZ JSC — started as electrician, promoted to Press Shop Automation engineer.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">04</span> SELECTED PROJECTS</h2>
+        <div class="proj-grid">
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2024</div>
+            <h3 class="proj-name">SEGRO Logistics Park — Multi Stacker Crane</h3>
+            <div class="proj-client">SEGRO · Northampton, UK</div>
+            <p>Commissioning of 8 multi-stacker cranes across 16 aisles for large-scale automated logistics facility.</p>
+            <div class="proj-tags">
+              <span class="tag">TIA Portal V18</span><span class="tag">S7-1517F</span><span class="tag">HMI KTP700F</span>
+            </div>
+          </div>
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2024</div>
+            <h3 class="proj-name">Intuitive Surgical Optics — Pallet Stacker</h3>
+            <div class="proj-client">Intuitive Surgical · Germany</div>
+            <p>Commissioning 2× PLC for pallet stacker crane and conveyor system. SIEMENS Intralogistics platform.</p>
+            <div class="proj-tags">
+              <span class="tag">S7-1515F</span><span class="tag">S7-1517F</span><span class="tag">TIA V18</span>
+            </div>
+          </div>
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2022–2024</div>
+            <h3 class="proj-name">Tesla — All-in-One Master Project</h3>
+            <div class="proj-client">Tesla Manufacturing · Berlin &amp; Austin, USA</div>
+            <p>Creation and ongoing support of a single Master Project for all unwinders and rewinders across Tesla Berlin and Austin facilities. Code standardization and drift prevention via CI/CD.</p>
+            <div class="proj-tags">
+              <span class="tag">TIA Portal V16</span><span class="tag">S7-1518F</span><span class="tag">CI/CD</span><span class="tag">Dry Electrode</span>
+            </div>
+          </div>
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2020</div>
+            <h3 class="proj-name">ERIKS — Automated High-Bay Warehouse</h3>
+            <div class="proj-client">ERIKS Deutschland · Germany</div>
+            <p>Commissioning automated storage: 117×7 cells, 5 levels, 3 aisles — ~40,000 storage locations. 15× PLCs, MFC telegram testing.</p>
+            <div class="proj-tags">
+              <span class="tag">TIA V15.1</span><span class="tag">S7-1512SP-F</span><span class="tag">MFC</span>
+            </div>
+          </div>
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2016–2019</div>
+            <h3 class="proj-name">Tesla Grohmann — Volvo Seal Robot</h3>
+            <div class="proj-client">Tesla Grohmann Automation · Sweden &amp; Belgium</div>
+            <p>Commissioning of robot system for applying seals to car body panorama roofs. Volvo PLC programming standard. Sites: Gothenburg &amp; Ghent Volvocars plants.</p>
+            <div class="proj-tags">
+              <span class="tag">TIA Portal</span><span class="tag">S7-1517F</span><span class="tag">Robotics</span>
+            </div>
+          </div>
+
+          <div class="proj-card" data-reveal>
+            <div class="proj-badge">2016–2019</div>
+            <h3 class="proj-name">LAD GmbH — USM250 Machine Family</h3>
+            <div class="proj-client">LAD GmbH · Germany</div>
+            <p>Modernization of absorbent pad cutting machines. New electrical design, software development, Master Project for 10+ serial machines. Full retrofit to SIMATIC S7-1200 + SEW servo drives.</p>
+            <div class="proj-tags">
+              <span class="tag">TIA Portal</span><span class="tag">S7-1200</span><span class="tag">SEW</span><span class="tag">E-PLAN P8</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">05</span> EDUCATION &amp; CERTIFICATES</h2>
+        <div class="edu-grid">
+          <div class="edu-col">
+            <h3 class="edu-sub">Education</h3>
+            <div class="edu-item">
+              <div class="edu-year">1996 – 2001</div>
+              <div class="edu-degree">Dipl.-Ing. Industrial Electronics</div>
+              <div class="edu-school">Togliatti Polytechnic Institute</div>
+              <div class="edu-note">Thesis: Thyristor DC Electric Drive — Distinction</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2003 – 2006</div>
+              <div class="edu-degree">Second Degree in Management</div>
+              <div class="edu-school">International Market Institute (Part-time)</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2019</div>
+              <div class="edu-degree">Authorization: Title "Ingenieur" in Germany</div>
+              <div class="edu-school">Bezirksregierung Arnsberg</div>
+            </div>
+          </div>
+
+          <div class="edu-col">
+            <h3 class="edu-sub">Certificates</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <span class="cert-dot">▸</span>
+                <span>Siemens Safety Integrated / Distributed Safety (ST-PPDS)</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-dot">▸</span>
+                <span>Siemens SINAMICS S120 Service &amp; Commissioning (2023)</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-dot">▸</span>
+                <span>WBS Training: Industry 4.0 in Automation Technology (2019)</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-dot">▸</span>
+                <span>telc German Test for the Profession B2 (2025)</span>
+              </div>
+            </div>
+
+            <h3 class="edu-sub" style="margin-top:2rem">Languages</h3>
+            <div class="lang-bars">
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:90%"></div></div>
+                <span class="lang-level">C1</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">German</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:60%"></div></div>
+                <span class="lang-level">B2</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Russian</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                <span class="lang-level">Native</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">06</span> CONTACT</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-label">EMAIL</span>
+              <a href="mailto:george.menderov@gmail.com" class="contact-value">george.menderov@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">PHONE</span>
+              <a href="tel:+4917623409044" class="contact-value">+49 176 234 090 44</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LOCATION</span>
+              <span class="contact-value">Märkische Allee 316, 12687 Berlin</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LINKEDIN</span>
+              <a href="https://www.linkedin.com/in/george-menderov" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/george-menderov</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">STATUS</span>
+              <span class="contact-value contact-open">Available for projects</span>
+            </div>
+          </div>
+          <div class="contact-terminal">
+            <div class="terminal-bar">
+              <span class="tb-dot red"></span>
+              <span class="tb-dot yellow"></span>
+              <span class="tb-dot green"></span>
+              <span class="tb-title">terminal</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> ping george.menderov@gmail.com</div>
+              <div class="t-line t-out" id="t-ping"></div>
+              <div class="t-line"><span class="t-prompt">$</span> skills --list</div>
+              <div class="t-line t-out" id="t-skills"></div>
+              <div class="t-line"><span class="t-prompt">$</span> status --check</div>
+              <div class="t-line t-out" id="t-status"></div>
+              <div class="t-cursor" id="t-cursor">█</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Georgii Menderov</span>
+      <span class="footer-tag">Built without frameworks. Deployed with purpose.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
